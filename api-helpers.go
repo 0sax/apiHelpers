@@ -9,12 +9,12 @@ import (
 
 type (
 	ErrorResponse struct {
-		Message string
+		Message string `json:"message"`
 	}
 
 	OKResponse struct {
-		Message string
-		Data    interface{}
+		Message string `json:"message"`
+		Data    interface{} `json:"data"`
 	}
 )
 
