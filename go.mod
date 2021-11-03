@@ -1,3 +1,3 @@
-module github.com/Lord-Ofada/apiHelpers
+module github.com/0sax/apiHelpers
 
 go 1.15
