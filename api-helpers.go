@@ -43,6 +43,9 @@ func Unmarshal(body io.ReadCloser, target interface{}) error {
 	if err != nil {
 		return err
 	}
+	defer func() {
+		body.Close()
+	}()
 
 	if err = json.Unmarshal(bd, target); err != nil {
 		return err
